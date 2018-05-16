@@ -1,0 +1,12 @@
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.app {
+  display: flex;
+}
+
+.main {
+  width: 500px;
+  margin: auto;
+}

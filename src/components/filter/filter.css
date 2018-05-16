@@ -1,0 +1,12 @@
+.filter-wrapper {
+  margin-bottom: 20px;
+}
+
+.filter-items {
+  display: flex;
+  flex-direction: row!important;
+}
+
+.filter--item + .filter--item {
+  margin-left: 10px;
+}
