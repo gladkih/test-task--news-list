@@ -1,5 +1,7 @@
 // @flow
 import React from 'react';
+import { Helmet } from 'react-helmet';
+
 import { withRouter } from 'react-router-dom';
 
 import './news.css';
@@ -30,6 +32,9 @@ class News extends React.Component<Props, State> {
     if (selectedNews) {
       return (
         <article className="news">
+          <Helmet>
+            {selectedNews.title && <title>{selectedNews.title}</title>}
+          </Helmet>
           {selectedNews.title && <h1 className="news--title">{selectedNews.title}</h1> }
           {selectedNews.urlToImage &&
           <img
