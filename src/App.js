@@ -1,9 +1,9 @@
 // @flow
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { withRouter } from 'react-router-dom';
 import moment from 'moment/moment';
 
-import { withRouter } from 'react-router-dom';
 import Header from './components/Header/Header';
 import AppRoutes from './routes';
 import articleStore from './store/article-store';

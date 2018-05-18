@@ -20,8 +20,7 @@ class ArticleStore {
   }
 
   @action addArticles(articles) {
-    this.articles = [];
-    articles.forEach(article => this.articles.push(article));
+    this.articles = articles;
   }
 
   @action setFilter(arg) {

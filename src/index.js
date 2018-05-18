@@ -1,19 +1,13 @@
 // @flow
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Switch } from 'react-router-dom';
-import { Provider } from 'mobx-react';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import './index.css';
-import articleStore from './store/article-store';
 
 ReactDOM.render(
-  <Provider articleStore={articleStore}>
-    <BrowserRouter>
-      <Switch>
-        <App />
-      </Switch>
-    </BrowserRouter>
-  </Provider>,
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
   document.getElementById('root'),
 );

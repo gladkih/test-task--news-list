@@ -105,8 +105,7 @@ class Header extends React.Component<Props, State> {
         if ({}.hasOwnProperty.call(data, 'articles')) {
           articleStore.addArticles(data.articles);
         }
-        articleStore.setFilter({ country });
-        articleStore.setFilter({ category });
+        articleStore.setFilter({ country, category });
         articleStore.setUpdateState(false);
       })
       .catch((error) => {
